@@ -64,11 +64,15 @@
     <Folder Include="HypeSpace\" />
     <Folder Include="Landing_Page\" />
     <Folder Include="Landing_Page\migrations\" />
+    <Folder Include="Landing_Page\static\" />
     <Folder Include="Landing_Page\templates\" />
     <Folder Include="Landing_Page\templates\Landing_Page\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Landing_Page\templates\Landing_Page\about.html" />
+    <Content Include="Landing_Page\static\site.css" />
     <Content Include="Landing_Page\templates\Landing_Page\index.html" />
+    <Content Include="Landing_Page\templates\Landing_Page\layout.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

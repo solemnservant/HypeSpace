@@ -12,11 +12,12 @@ import Landing_Page.views
 
 
 urlpatterns = [
+    url(r'^about$', Landing_Page.views.about, name='about'),
     url(r'^$', Landing_Page.views.index, name='index'),
     url(r'^home$', Landing_Page.views.index, name='home'),
         path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
-    path('about/', views.about, name='about'),
+    #path('about/', views.about, name='about'),
     path('login/',
          LoginView.as_view
          (
