@@ -9,15 +9,18 @@ from django.contrib.auth.views import LoginView, LogoutView
 from app import forms, views
 from django.conf.urls import include, url
 import Landing_Page.views
+admin.autodiscover()
 
 
 urlpatterns = [
-    url(r'^about$', Landing_Page.views.about, name='about'),
-    url(r'^$', Landing_Page.views.index, name='index'),
-    url(r'^home$', Landing_Page.views.index, name='home'),
-        path('', views.home, name='home'),
+    #url(r'^about$', Landing_Page.views.about, name='about'),
+   #url(r'^$', Landing_Page.views.index, name='index'),
+    #url(r'^home$', Landing_Page.views.index, name='home'),
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    path('clients/', include('clients.urls')),
+    path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
-    #path('about/', views.about, name='about'),
+    path('about/', views.about, name='about'),
     path('login/',
          LoginView.as_view
          (
@@ -32,4 +35,4 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
-]
+    ]

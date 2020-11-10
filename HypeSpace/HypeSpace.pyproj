@@ -38,6 +38,16 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="clients\admin.py" />
+    <Compile Include="clients\apps.py" />
+    <Compile Include="Clients\migrations\__init__.py" />
+    <Compile Include="clients\models.py" />
+    <Compile Include="clients\tests.py" />
+    <Compile Include="clients\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clients\views.py" />
+    <Compile Include="clients\__init__.py" />
     <Compile Include="Landing_Page\admin.py" />
     <Compile Include="Landing_Page\apps.py" />
     <Compile Include="Landing_Page\migrations\__init__.py" />
@@ -57,10 +67,17 @@
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\content\css\" />
+    <Folder Include="app\static\app\content\img\" />
     <Folder Include="app\static\app\fonts\" />
     <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\app\scripts\js\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="clients\" />
+    <Folder Include="Clients\migrations\" />
+    <Folder Include="Clients\templates\" />
+    <Folder Include="Clients\templates\clients\" />
     <Folder Include="HypeSpace\" />
     <Folder Include="Landing_Page\" />
     <Folder Include="Landing_Page\migrations\" />
@@ -69,10 +86,34 @@
     <Folder Include="Landing_Page\templates\Landing_Page\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\content\css\bootstrap-grid.css" />
+    <Content Include="app\static\app\content\css\bootstrap-grid.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap-grid.min.css" />
+    <Content Include="app\static\app\content\css\bootstrap-grid.min.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap-reboot.css" />
+    <Content Include="app\static\app\content\css\bootstrap-reboot.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap-reboot.min.css" />
+    <Content Include="app\static\app\content\css\bootstrap-reboot.min.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap.css" />
+    <Content Include="app\static\app\content\css\bootstrap.css.map" />
+    <Content Include="app\static\app\content\css\bootstrap.min.css" />
+    <Content Include="app\static\app\content\css\bootstrap.min.css.map" />
+    <Content Include="app\static\app\content\img\architect.jpg" />
+    <Content Include="app\static\app\scripts\js\bootstrap.bundle.js" />
+    <Content Include="app\static\app\scripts\js\bootstrap.bundle.js.map" />
+    <Content Include="app\static\app\scripts\js\bootstrap.bundle.min.js" />
+    <Content Include="app\static\app\scripts\js\bootstrap.bundle.min.js.map" />
+    <Content Include="app\static\app\scripts\js\bootstrap.js" />
+    <Content Include="app\static\app\scripts\js\bootstrap.js.map" />
+    <Content Include="app\static\app\scripts\js\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\js\bootstrap.min.js.map" />
+    <Content Include="Clients\templates\clients\index.html" />
+    <Content Include="Clients\templates\clients\office.html" />
     <Content Include="Landing_Page\templates\Landing_Page\about.html" />
     <Content Include="Landing_Page\static\site.css" />
     <Content Include="Landing_Page\templates\Landing_Page\index.html" />
     <Content Include="Landing_Page\templates\Landing_Page\layout.html" />
+    <Content Include="libman.json" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
