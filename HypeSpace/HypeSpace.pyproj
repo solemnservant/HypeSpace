@@ -107,6 +107,7 @@
     <Content Include="app\static\app\scripts\js\bootstrap.js.map" />
     <Content Include="app\static\app\scripts\js\bootstrap.min.js" />
     <Content Include="app\static\app\scripts\js\bootstrap.min.js.map" />
+    <Content Include="Clients\templates\clients\all_clients.html" />
     <Content Include="Clients\templates\clients\index.html" />
     <Content Include="Clients\templates\clients\office.html" />
     <Content Include="Landing_Page\templates\Landing_Page\about.html" />

@@ -1,0 +1,15 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<p>List of Clients</p>
+
+<ul>
+    {% for client in all_clients%}
+        <li>
+            <a href=" {%  url 'clients:client'client.id %}">{{client}}</a></li>
+    {%empty %}
+        <li> NO clients have been added yet. </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
